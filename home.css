@@ -180,6 +180,8 @@ body {
     font-size: 13px;
 }
   
+
+
 @media (min-width: 992px) {
     .navbar-nav {
       margin-left: auto; /* Memindahkan menu ke sisi kanan */
