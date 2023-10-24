@@ -1,0 +1,187 @@
+@import url('https://font.googleleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #25B0E7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.logo-png {
+    width: 65px;
+    height: auto;
+    margin: 10px;
+    margin-left: 60px;
+}
+
+.nav-item {
+    margin : 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white !important; /* Atur warna font menjadi putih */
+}
+  
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+}
+
+.contentsatu {
+    height: 100vh; /* Mengisi tinggi viewport */
+    position: relative;
+    overflow: hidden; /* Mengatur elemen .contentsatu untuk mengurung .bg-content */
+}
+
+.bg-content {
+    background-image: url('background.JPG');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Mengatur posisi elemen menjadi tetap */
+    z-index: -1; /* Mengatur z-index agar berada di bawah elemen-elemen lain */
+    top: 0; /* Mengatur elemen ke bagian atas layar */
+    left: 0; /* Mengatur elemen ke bagian kiri layar */
+    width: 100%; /* Mengisi seluruh lebar layar */
+    height: 700px; /* Mengisi seluruh tinggi layar */
+    opacity: 0.7; /* Mengatur tingkat transparansi sesuai kebutuhan */
+}
+.bg-content::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* Warna overlay gelap (hitam dengan transparansi 0.5) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mengatur z-index agar berada di bawah elemen-elemen lain */
+}
+
+.content-wrapper {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff ;/* Warna teks */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contentdua {
+    position: relative;
+    background-color: #f4f4f4; /* Atur warna latar belakang putih pada content 2 */
+}
+
+.bg-desc {
+    background-image: url('Rectangle\ 21.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    width: 100%;
+    padding: 100px 150px;
+}
+.bg-desc h2 {
+    margin-bottom: 18px;
+}
+.bg-desc p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.contenttiga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: flex;
+}
+  
+.img-spt .sepatupng {
+    width: 400px;
+    margin-right: 70px;
+}
+
+.image-bullet-list {
+    list-style: none;
+    padding: 0;
+}
+  
+.image-bullet-list .bullet-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #25B0E7;
+    font-size: 18px;
+    line-height: 1.4;
+}
+  
+.bullet-item img {
+    width: 30px; /* Mengatur ukuran gambar bullet */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+    vertical-align: middle;
+}
+  
+.grid-container {
+    display: flex;
+    align-items: center;
+}
+  
+.img-spt img {
+    width: 100px; /* Mengatur ukuran gambar sepatu */
+    margin-right: 20px; /* Jarak antara gambar sepatu dan teks bullet */
+}
+
+.carousel-inner .carousel-item .prod-img {
+    width: 5000px;
+    height: 582px;
+    object-fit: cover;
+}
+
+.prod-layanan {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+    display: flex;
+    text-align: left;
+}
+
+.card .row .col-md-8 {
+    margin-top: 15px;
+}
+
+.card .row .col-md-8 p {
+    font-size: 13px;
+}
+  
+@media (min-width: 992px) {
+    .navbar-nav {
+      margin-left: auto; /* Memindahkan menu ke sisi kanan */
+    }
+}
