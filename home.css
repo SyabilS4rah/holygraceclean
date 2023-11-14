@@ -37,7 +37,7 @@ body {
 }
 
 .contentsatu {
-    height: 100vh; /* Mengisi tinggi viewport */
+    height: 100%; /* Mengisi tinggi viewport */
     position: relative;
     overflow: hidden; /* Mengatur elemen .contentsatu untuk mengurung .bg-content */
 }
@@ -51,7 +51,7 @@ body {
     top: 0; /* Mengatur elemen ke bagian atas layar */
     left: 0; /* Mengatur elemen ke bagian kiri layar */
     width: 100%; /* Mengisi seluruh lebar layar */
-    height: 700px; /* Mengisi seluruh tinggi layar */
+    height: 600px; /* Mengisi seluruh tinggi layar */
     opacity: 0.7; /* Mengatur tingkat transparansi sesuai kebutuhan */
 }
 .bg-content::before {
@@ -88,7 +88,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     width: 100%;
-    padding: 100px 150px;
+    padding: 50px 150px;
 }
 .bg-desc h2 {
     margin-bottom: 18px;
@@ -96,6 +96,16 @@ body {
 .bg-desc p {
     font-size: 15px;
     text-align: justify;
+}
+.about-holy {
+    margin: 20px;
+    padding-left: 100px;
+}
+.about_holypng {
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.1); /* Ubah nilai-nilai ini sesuai kebutuhan */
 }
 
 .contenttiga {
@@ -105,55 +115,45 @@ body {
     height: 500px;
 }
 
-.service {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .grid-container {
     display: flex;
-}
-  
-.img-spt .sepatupng {
-    width: 400px;
-    margin-right: 70px;
+    align-items: center;
 }
 
-.image-bullet-list {
-    list-style: none;
-    padding: 0;
+.container{
+    height: 500px;
+    margin: 50px;
+    color: #d2d2d2;
 }
-  
-.image-bullet-list .bullet-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.container p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #006496
+}
+.container h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size:  30px;
     color: #25B0E7;
-    font-size: 18px;
-    line-height: 1.4;
+    margin-top: -10px;
+    margin-bottom: 40px;
 }
-  
-.bullet-item img {
-    width: 30px; /* Mengatur ukuran gambar bullet */
-    margin-right: 10px; /* Jarak antara gambar dan teks */
-    vertical-align: middle;
+.card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: none !important;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.1); /* Ubah nilai-nilai ini sesuai kebutuhan */    
 }
-  
-.grid-container {
+.card-text {
+    text-align: center;
+    color: #006496;
+}
+.card {
+    margin: 10px;
     display: flex;
-    align-items: center;
-}
-  
-.img-spt img {
-    width: 100px; /* Mengatur ukuran gambar sepatu */
-    margin-right: 20px; /* Jarak antara gambar sepatu dan teks bullet */
-}
-
-.carousel-inner .carousel-item .prod-img {
-    width: 5000px;
-    height: 582px;
-    object-fit: cover;
+    text-align: left;
 }
 
 .prod-layanan {
@@ -164,20 +164,35 @@ body {
     justify-content: center;
     padding: 50px 0;
     text-align: center;
+    background-color: #f4f4f4 !important;
 }
-
-.card {
-    margin: 10px;
-    display: flex;
-    text-align: left;
+.prod-layanan .card-body{
+    justify-content: center;
+    padding: 80px 30px;
 }
-
-.card .row .col-md-8 {
-    margin-top: 15px;
+.prod-layanan .card {
+    background-color: #25B0E7;
+}
+.prod-layanan .card-title {
+    font-weight: bold;
+    color: #f4f4f4;
+}
+.prod-layanan .card-text-layanan {
+    font-weight: normal;
+    font-size: 15px;
+    color: #f4f4f4;
 }
 
 .card .row .col-md-8 p {
     font-size: 13px;
+}
+.prod-jasa .card {
+    width: 200px;
+    height: auto;
+}
+.prod-jasa img{
+    width: 200px;
+    height: auto;
 }
   
 

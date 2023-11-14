@@ -24,10 +24,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#aboutSection">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Product</a>
+                <a class="nav-link active" aria-current="page" href="#prod-layanan">Product</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -37,83 +37,124 @@
         </div>
       </nav>
 
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+     
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                 behavior: 'smooth'
+              });
+           });
+        });
+     </script>
+     
+
       <!--Content 1-->
       <div class="contentsatu">
         <div class="bg-content">
           <div class="content-wrapper text-center">
             <h1>Holygrace Clean</h1>
             <p>Cleaner Shoes, Brighter Days!</p>
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#aboutSection" class="btn btn-primary">Get Started</a>
           </div>
         </div>
       </div>
 
       <!--Content 2-->
-      <div class="contentdua">
+      <div class="contentdua" id="aboutSection">
         <div class="bg-desc">
-          <h2>Apa itu Holygrace Clean?</h2>
-          <p>
-            Kami dengan bangga memperkenalkan Holygrace Clean! tujuan terpercaya Anda untuk menjaga sepatu tetap bersih, 
-            terawat, dan siap untuk menemani Anda dalam setiap langkah. Kami hadir untuk menjawab permasalahan anda serta 
-            memberikan solusi atas keterbatasan waktu dalam menjaga dan juga merawat sepatu kesayangan anda! Holygrace clean 
-            menawarkan berbagai layanan kebersihan, pelayanan2 yang sangat menarik untuk customer kami, dan juga menyediakan 
-            berbagai produk-produk kebersihan sepatu.
-          </p>
-        </div>
-      </div>
-      
-      <!--Content 3-->
-      <div class="contenttiga">
-        <div class="service">
           <div class="grid-container">
-            <div class="img-spt">
-              <img src="sepatu.png" alt="sepatupro" class="sepatupng">
+            <div class="deskripsi">
+              <h2>Apa itu Holygrace Clean?</h2>
+              <p>
+                Kami dengan bangga memperkenalkan Holygrace Clean! tujuan terpercaya Anda untuk menjaga sepatu tetap bersih, 
+                terawat, dan siap untuk menemani Anda dalam setiap langkah. Kami hadir untuk menjawab permasalahan anda serta 
+                memberikan solusi atas keterbatasan waktu dalam menjaga dan juga merawat sepatu kesayangan anda! Holygrace clean 
+                menawarkan berbagai layanan kebersihan, pelayanan2 yang sangat menarik untuk customer kami, dan juga menyediakan 
+                berbagai produk-produk kebersihan sepatu.
+              </p>
             </div>
-            <ul class="image-bullet-list">
-              <ul class="image-bullet-list">
-                <li>
-                  <div class="bullet-item">
-                    <img src="Group.png" alt="Bullet Icon">
-                    Konsultasi & Edukasi terkait Perawatan Sepatu
-                  </div>
-                </li>
-                <li>
-                  <div class="bullet-item">
-                    <img src="Group.png" alt="Bullet Icon">
-                    Free Delivery Se-Jatinangor
-                  </div>
-                </li>
-                <li>
-                  <div class="bullet-item">
-                    <img src="Group.png" alt="Bullet Icon">
-                    Program Keanggotaan (Membership)
-                  </div>
-                </li>
-                <li>
-                  <div class="bullet-item">
-                    <img src="Group.png" alt="Bullet Icon">
-                    Menawarkan Promo-Promo Menarik
-                  </div>
-                </li>
-                <li>
-                  <div class="bullet-item">
-                    <img src="Group.png" alt="Bullet Icon">
-                    Bekerja-sama dengan Kos-kosan
-                  </div>
-                </li>
-              </ul>
-            </ul>
+            <div class="about-holy">
+              <img src="about-holy.png" alt="about_holy" class="about_holypng">
+            </div>
           </div>
         </div>
       </div>
       
+      <!--Content 3-->
+      <div class="container">
+        <p>Kami sangat menghargai pelanggan</p>
+        <h2>Layanan yang dapat kami berikan</h2>
+        <!-- Baris pertama (3 card) -->
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card" style="width: 350px; height: auto;">
+                <img src="consul.png" class="card-img-top mx-auto d-block" style="width: 80px; height: 100%; margin-top: 25px;">
+                <div class="card-body">
+                  <p class="card-text">Konsultasi terkait Perawatan Sepatu.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 350px; height: auto;">
+                <img src="delivery.png" class="card-img-top mx-auto d-block" style="width: 80px; height: 100%; margin-top: 25px;">
+                <div class="card-body">
+                  <p class="card-text">Free Delivery Se-Jatinangor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 350px; height: auto;">
+                <img src="memebership.png" class="card-img-top mx-auto d-block" style="width: 80px; height: 100%; margin-top: 25px;">
+                <div class="card-body">
+                  <p class="card-text">Program Keanggotaan (Membership).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        <!-- Spasi antara dua grup Card -->
+        <div class="my-2"></div>
+        
+        <!-- Baris pertama (3 card) -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card" style="width: 350px; height: auto;">
+              <img src="discount.png" class="card-img-top mx-auto d-block" style="width: 80px; height: 100%; margin-top: 25px;">
+              <div class="card-body">
+                <p class="card-text">Menawarkan Promo-Promo Menarik.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 350px; height: auto;">
+              <img src="kerjasama.png" class="card-img-top mx-auto d-block" style="width: 100px; height: 100%; margin-top: 25px;">
+              <div class="card-body">
+                <p class="card-text">Bekerja-sama dengan Kos-kosan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 350px; height: auto;">
+              <img src="edukasi.png" class="card-img-top mx-auto d-block" style="width: 80px; height: 100%; margin-top: 25px;">
+              <div class="card-body">
+                <p class="card-text">Edukasi perawatan sepatu yang baik.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
       <!--Content 4-->
-      <div class="prod-layanan">
+      <div class="prod-layanan" id="prod-layanan">
         <h1 class="layanan">
           Berikut Merupakan Layanan Kami!
         </h1>
         <div class="produk-satu">
-          <div class="card mb-3" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 700px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -125,17 +166,17 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Shoe Cleaner</h5>
-                  <p class="card-text">
+                  <p class="card-text-layanan">
                     Sabun pencuci sepatu dengan bahan yang ramah lingkungan serta efektif dalam membersihkan noda dan kotoran pada sepatu kesayangan anda.
                   </p>
-                  <a href="#" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="produk-dua">
-          <div class="card mb-3" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 700px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -147,17 +188,17 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Shoe Refreshener Berry Bliss</h5>
-                  <p class="card-text">
+                  <p class="card-text-layanan">
                     Sebagai anti bakteri untuk menghilangkan bau tidak sedap pada sepatu. Wangi buah segar seperti buah segar yang baru dipetik dari pohonnya.
                   </p>
-                  <a href="#" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="produk-tiga">
-          <div class="card mb-3" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 700px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -169,10 +210,10 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Shoe Refreshener Cappucino Comfort</h5>
-                  <p class="card-text">
+                  <p class="card-text-layanan">
                     Sebagai anti bakteri untuk menghilangkan bau tidak sedap pada sepatu. Wangi serbuk kopi hitam yang pekat, seperti wangi kopi khas Indonesia.
                   </p>
-                  <a href="#" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -181,41 +222,42 @@
       </div>
 
       <!--Content 5-->
-      <div class="prod-jasa">
+      <div class="prod-jasa text-center">
         <div>
-          <h1>Berikut Adalah Jasa yang Kami Sediakan</h1>
+            <h1>Berikut Adalah Jasa yang Kami Sediakan</h1>
         </div>
-        <div class="card-group">
-          <div class="card col-md-4">
-            <img src="fast_cleaning.jpg"/>
-            <div class="card-body">
-              <h5 class="card-title">Fast Cleaning</h5>
-              <p class="card-text">
-                Pencucian instan pada bagian upper dan midsole dapat ditunggu 15-30 menit
-              </p>
-              <a href="#" class="btn btn-primary">Order Now</a>
+        <div class="d-flex justify-content-center">
+            <div class="card col-md-4">
+                <img src="fast_cleaning.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Fast Cleaning</h5>
+                    <p class="card-text">
+                        Pencucian instan pada bagian upper dan midsole dapat ditunggu 15-30 menit
+                    </p>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                </div>
             </div>
-          </div>
-          <div class="card col-md-4">
-            <img src="deep cleaning.jpg" class="card-img-top" alt="Palm Springs Road"/>
-            <div class="card-body">
-              <h5 class="card-title">Deep Cleaning</h5>
-              <p class="card-text">Perawatan pembersihan sepatu secara detail dan menyeluruh pada seluruh bagian</p>
-              <a href="#" class="btn btn-primary">Order Now</a>
+            <div class="card col-md-4">
+                <img src="deep cleaning.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Deep Cleaning</h5>
+                    <p class="card-text">Perawatan pembersihan sepatu secara detail dan menyeluruh pada seluruh bagian</p>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                </div>
             </div>
-          </div>
-          <div class="card col-md-4">
-            <img src="premium.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-            <div class="card-body">
-              <h5 class="card-title">Premium Treatment</h5>
-              <p class="card-text">
-                Perawatan yang ditujukkan untuk material khusus dalam pengerjaannya dan menggunakan bahan khusus dalam setiap produknya.
-              </p>
-              <a href="#" class="btn btn-primary">Order Now</a>
+            <div class="card col-md-4">
+                <img src="premium.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Premium Treatment</h5>
+                    <p class="card-text">
+                        Perawatan yang ditujukkan untuk material khusus dalam pengerjaannya dan menggunakan bahan khusus dalam setiap produknya.
+                    </p>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
