@@ -30,7 +30,6 @@ body {
     color: white !important; /* Atur warna font menjadi putih */
 }
   
-
 .navbar-center {
     display: flex;
     justify-content: center;
@@ -115,6 +114,14 @@ body {
     height: 500px;
 }
 
+.tittle-layanan p {
+    color: #006496;
+    margin-bottom: 10px !important;
+} .tittle-layanan h2 {
+    color: #25B0E7;
+    padding-bottom: 30px;
+} 
+
 .grid-container {
     display: flex;
     align-items: center;
@@ -172,6 +179,9 @@ body {
 }
 .prod-layanan .card {
     background-color: #25B0E7;
+    border-radius: 20px !important;
+}.prod-layanan .card img {
+    border-radius: 20px 0px 0px 20px !important;
 }
 .prod-layanan .card-title {
     font-weight: bold;
@@ -186,16 +196,84 @@ body {
 .card .row .col-md-8 p {
     font-size: 13px;
 }
-.prod-jasa .card {
-    width: 200px;
-    height: auto;
-}
-.prod-jasa img{
-    width: 200px;
-    height: auto;
-}
-  
 
+.prod-jasa {
+    margin: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prod-jasa p {
+    color: #006496;
+    margin-bottom: 10px !important;
+} .prod-jasa h2 {
+    color: #25B0E7;
+    padding-bottom: 30px;
+} 
+
+.prod-jasa .card {
+    width: 300px;
+    height: auto;
+    margin: 20px !important;
+    background-color: #25B0E7;
+    border-radius: 20px !important;
+}.prod-jasa .card img {
+    border-radius: 20px 20px 0px 0px !important;
+} .prod-jasa .card .card-title {
+    margin-top: 15px !important;
+    font-weight: bold;
+    color: #ffffff;
+} .prod-jasa .card .card-text {
+    margin-bottom: 20px !important;
+    text-align: left;
+    color: #ffffff;
+} .prod-jasa .card .btn {
+    margin-bottom: 5px !important;
+    border-radius: 20px;
+}
+
+.prod-jasa img{
+    width: 300px;
+    height: auto;
+}
+
+.contact {
+    background-color: #25B0E7;
+    font-family: 'Poppins', sans-serif;
+    color: #f4f4f4;
+    width: auto;
+    height: 700px;
+    padding-top: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.map-container {
+    height: 500px; /* Ubah tinggi peta sesuai kebutuhan */
+}
+.address-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}.address-info .map-text{
+    font-size: 30px;
+}.address-info .contact-info-stat{
+    margin-bottom: 10px;
+    font-weight: bold;
+}.address-info img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#map {
+    width: 800px;
+    height: 450px;
+    margin: 40px;
+}
 
 @media (min-width: 992px) {
     .navbar-nav {

@@ -10,6 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
     <!--Navbar-->
@@ -30,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="#prod-layanan">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -56,7 +58,6 @@
           <div class="content-wrapper text-center">
             <h1>Holygrace Clean</h1>
             <p>Cleaner Shoes, Brighter Days!</p>
-            <a href="#aboutSection" class="btn btn-primary">Get Started</a>
           </div>
         </div>
       </div>
@@ -146,13 +147,12 @@
         </div>
       </div>
       
-      
-      
       <!--Content 4-->
       <div class="prod-layanan" id="prod-layanan">
-        <h1 class="layanan">
-          Berikut Merupakan Layanan Kami!
-        </h1>
+        <div class="tittle-layanan">
+          <p>Pilihan dapat menentukan selera pelanggan</p>
+          <h2>Berikut Merupakan Layanan Kami!</h2>
+        </div>
         <div class="produk-satu">
           <div class="card mb-3" style="max-width: 700px;">
             <div class="row g-0">
@@ -169,7 +169,9 @@
                   <p class="card-text-layanan">
                     Sabun pencuci sepatu dengan bahan yang ramah lingkungan serta efektif dalam membersihkan noda dan kotoran pada sepatu kesayangan anda.
                   </p>
-                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Whatsapp</a>
+                  <a href="https://tokopedia.link/VJuIf3S7jFb" class="tokopedia btn btn-primary">Tokopedia</a>
+                  <a href="https://shp.ee/93ukrt7" class="shopee btn btn-primary">Shopee</a>
                 </div>
               </div>
             </div>
@@ -191,7 +193,9 @@
                   <p class="card-text-layanan">
                     Sebagai anti bakteri untuk menghilangkan bau tidak sedap pada sepatu. Wangi buah segar seperti buah segar yang baru dipetik dari pohonnya.
                   </p>
-                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Whatsapp</a>
+                  <a href="https://tokopedia.link/6xIiKtU7jFb" class="tokopedia btn btn-primary">Tokopedia</a>
+                  <a href="https://shp.ee/4vyfni9" class="shopee btn btn-primary">Shopee</a>
                 </div>
               </div>
             </div>
@@ -213,7 +217,9 @@
                   <p class="card-text-layanan">
                     Sebagai anti bakteri untuk menghilangkan bau tidak sedap pada sepatu. Wangi serbuk kopi hitam yang pekat, seperti wangi kopi khas Indonesia.
                   </p>
-                  <a href="http://wa.me/081329459740" class="btn btn-primary">Buy Now</a>
+                  <a href="http://wa.me/081329459740" class="btn btn-primary">Whatsapp</a>
+                  <a href="https://tokopedia.link/6xIiKtU7jFb" class="tokopedia btn btn-primary">Tokopedia</a>
+                  <a href="https://shp.ee/4vyfni9" class="shopee btn btn-primary">Shopee</a>
                 </div>
               </div>
             </div>
@@ -223,40 +229,90 @@
 
       <!--Content 5-->
       <div class="prod-jasa text-center">
-        <div>
-            <h1>Berikut Adalah Jasa yang Kami Sediakan</h1>
-        </div>
+        <p>Kami juga menyediakan jasa pelayanan terbaik untuk sepatu anda</p>
+        <h2>Berikut Adalah Jasa yang Kami Sediakan</h2>
         <div class="d-flex justify-content-center">
             <div class="card col-md-4">
                 <img src="fast_cleaning.jpg" class="card-img-top" />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Fast Cleaning</h5>
                     <p class="card-text">
                         Pencucian instan pada bagian upper dan midsole dapat ditunggu 15-30 menit
                     </p>
-                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary mt-auto">Order Now</a>
                 </div>
             </div>
             <div class="card col-md-4">
                 <img src="deep cleaning.jpg" class="card-img-top" />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Deep Cleaning</h5>
                     <p class="card-text">Perawatan pembersihan sepatu secara detail dan menyeluruh pada seluruh bagian</p>
-                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary mt-auto">Order Now</a>
                 </div>
             </div>
             <div class="card col-md-4">
                 <img src="premium.jpg" class="card-img-top" />
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Premium Treatment</h5>
                     <p class="card-text">
-                        Perawatan yang ditujukkan untuk material khusus dalam pengerjaannya dan menggunakan bahan khusus dalam setiap produknya.
+                      Ditujukkan untuk material khusus dan menggunakan bahan khusus dalam proses pencuciannya.
                     </p>
-                    <a href="http://wa.me/081329459740" class="btn btn-primary">Order Now</a>
+                    <a href="http://wa.me/081329459740" class="btn btn-primary mt-auto">Order Now</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--section map contact-->
+    <!--section map contact-->
+  <div class="contact" id="contact">
+    <div class="text-center" style="padding-top: 30px;"> <!-- Tambahkan class text-center -->
+      <p>Anda Dapat Mengontak dan Mengunjungi Kami</p>
+      <h2>Berikut adalah Alamat dan Kontak yang Bisa Anda Hubungi</h2>
+    </div>
+    <div class="grid-container">
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+      <div class="address-info">
+        <h5 class="map-text">Alamat</h5>
+        <p>Pondok Orange, Jl. Kolonel Ahmad Syam No. 46, Cikeruh, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
+        <div class="contact-info">
+          <div class="contact-info-stat">
+            <img src="whatsapp.png" alt="">081329459740
+          </div>
+          <div class="contact-info-stat">
+            <img src="email.png" alt="">holygracemarket@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Menggunakan koordinat baru
+      let mapOptions = {
+        center: [-6.9358, 107.7739],
+        zoom: 17 // Ubah nilai zoom sesuai kebutuhan
+      }
+
+      let map = new L.map('map', mapOptions);
+      let layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+      map.addLayer(layer);
+
+      // Menambahkan marker berwarna merah pada peta
+      let redIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      });
+
+      let marker = L.marker([-6.9358, 107.7739], { icon: redIcon }).addTo(map);
+    </script>
+  </div>
+
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
